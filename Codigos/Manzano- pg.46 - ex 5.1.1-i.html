@@ -1,0 +1,45 @@
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Exercício  ex 5.1.1-i apostila manzano">
+    <meta name="keywords" content="Javascript, Aula, manzano">
+    <meta name="author" content="Beatriz Romão">
+
+    <title>10 valores e média aritmética</title>
+
+</head>
+
+<body>
+   <!-- Elaborar um programa que efetue a leitura de 10 valores numéricos e apresente no final o total do 
+somatório e a média aritmética dos valores lidos.  -->
+ 
+
+  <h1>Operação Finalizada.</h1>
+
+  <h2>verifique o console </h2>
+
+  <script defer>
+
+      var i = 0, soma = 0, num;
+
+      while( i < 10 ) {
+          num = parseFloat(prompt(`Digite o número ${i + 1}: `));
+
+          soma = soma + num;
+          i++;
+
+      }
+
+      console.log(`Soma = ${soma}\nMédia = ${soma/i}`); 
+      
+  </script>
+
+  <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<html lang="pt-br"></html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Exercício  ex 5.2.1-1-f apostila manzano">
+    <meta name="keywords" content="Javascript, Aula, manzano">
+    <meta name="author" content="Beatriz Romão">
+
+    <title>resultado o valor do fatorial dos valores ímpares situados na faixa</title>
+
+</head>
+
+<body>
+    <!-- Elaborar um programa que apresente como resultado o valor do fatorial dos valores ímpares 
+            situados na faixa numérica de 1 a 10. -->
+
+    <h1>Operação Finalizada.</h1>
+
+    <h2>Verifique o console !</h2>
+
+    <script defer>
+
+         var i = 1, fatorial = 1, aux = 0;
+
+         do{
+
+            fatorial = 1;
+            aux = i;
+
+            while( aux > 1 ) {
+                fatorial = fatorial * (aux - 1);
+                aux--;
+
+            }
+
+            console.log(`Número - ${i} = ${fatorial}`);
+
+            i += 2;
+
+         } while( i < 10 );
+
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>
